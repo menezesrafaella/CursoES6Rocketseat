@@ -1,0 +1,17 @@
+{
+  "name": "my-course-kjs",
+  "version": "1.0.0",
+  "description": "Learning ES6 JS",
+  "main": "index.js",
+  "author": "Rafaella",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/preset-env": "^7.9.5"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}

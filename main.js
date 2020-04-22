@@ -34,11 +34,14 @@
 // console.log(User1);
 
 
-const usuarios = [
-    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
-    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
-    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
-   ];
+
+// EXERCICIO 2 :
+
+// const usuarios = [
+//     { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
+//     { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
+//     { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
+//    ];
 
 
 //    const idade = usuarios.map(function(item){
@@ -58,18 +61,57 @@ const usuarios = [
 
 
 
-   var usuariosDobro = usuarios.map(function(item){
-        item.idade *= 2 
-        return item
-       })
-       
-       usuariosDobro = usuariosDobro.filter((item)=>{
-           return item.idade < 50 
-       })
+//    var usuariosDobro = usuarios.map(function(item){
+//         item.idade *= 2 
+//         return item
+//        })
 
-        // idades.forEach((x)=>{
-        //     console.log(x < 50)
-        // })       
+//        usuariosDobro = usuariosDobro.filter((item)=>{
+//            return item.idade < 50 
+//        })       
 
-       console.log(usuariosDobro)
-       
+//        console.log(usuariosDobro)
+
+
+
+// 3.1
+const arr = [1, 2, 3, 4, 5];
+arr.map((item) => {
+    return item + 10;
+});
+
+// 3.2
+// Dica: Utilize uma constante pra function
+const usuario = {
+    nome: 'Diego',
+    idade: 23
+};
+
+
+const mostraIdade = (usuario) => {
+    return usuario.idade;
+}
+
+mostraIdade(usuario)
+
+// 3.3
+// Dica: Utilize uma constante pra function
+const nome = "Diego";
+const idade = 23;
+
+const mostraUsuario = (nome = 'Diego', idade = 18) => {
+    return {
+        nome,
+        idade
+    };
+}
+console.log(mostraUsuario(nome, idade));
+console.log(mostraUsuario(nome));
+
+
+// 3.4
+const promise = () => {
+    return new Promise(function(resolve, reject) {
+        return resolve();
+    })
+   }

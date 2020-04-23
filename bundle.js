@@ -91,3 +91,23 @@ var promise = function promise() {
     return resolve();
   });
 };
+
+var empresa = {
+  nome: 'Rocketseat',
+  endereco: {
+    cidade: 'Rio do Sul',
+    estado: 'SC'
+  }
+}; //    const { nome } = empresa;
+//    console.log(nome)
+
+function mostraInfo(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  return "".concat(nome, " tem ").concat(idade, " anos.");
+}
+
+console.log(mostraInfo({
+  nome: 'Rafaella',
+  idade: 23
+}));

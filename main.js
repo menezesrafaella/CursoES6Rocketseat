@@ -115,3 +115,23 @@ const promise = () => {
         return resolve();
     })
    }
+
+   const empresa = {
+    nome: 'Rocketseat',
+    endereco: {
+    cidade: 'Rio do Sul',
+    estado: 'SC',
+    }
+   };
+
+//    const { nome } = empresa;
+
+//    console.log(nome)
+
+
+
+function mostraInfo({nome , idade}) {
+    return `${nome} tem ${idade} anos.`;
+   }
+
+  console.log(mostraInfo({ nome: 'Rafaella', idade: 23 }))

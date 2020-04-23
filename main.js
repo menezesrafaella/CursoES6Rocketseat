@@ -172,10 +172,27 @@
 //     }
 //    };
 
-   
+
 // const usuario2= {...usuario, nome: 'Gabriel' }
 // console.log(usuario2)
 
 // const usuario3 = { ...usuario, endereco: {cidade: 'Lontras'}}
 // console.log(usuario3)
 
+// Exercicio 6
+
+
+const usuario = 'Diego';
+const idade = 23;
+console.log(`O usuário  ${usuario}  possui ' ${idade}  anos`);
+
+
+const nome = 'Diego';
+const idade = 23;
+const usuario4 = {
+ nome,
+ idade,
+ cidade: 'Rio do Sul',
+};
+
+console.log(usuario4)

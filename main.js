@@ -73,56 +73,61 @@
 //        console.log(usuariosDobro)
 
 
+// Exercicios 3
 
 // 3.1
-const arr = [1, 2, 3, 4, 5];
-arr.map((item) => {
-    return item + 10;
-});
+// const arr = [1, 2, 3, 4, 5];
+// arr.map((item) => {
+//     return item + 10;
+// });
 
 // 3.2
 // Dica: Utilize uma constante pra function
-const usuario = {
-    nome: 'Diego',
-    idade: 23
-};
+// const usuario = {
+//     nome: 'Diego',
+//     idade: 23
+// };
 
 
-const mostraIdade = (usuario) => {
-    return usuario.idade;
-}
+// const mostraIdade = (usuario) => {
+//     return usuario.idade;
+// }
 
-mostraIdade(usuario)
+// mostraIdade(usuario)
 
 // 3.3
 // Dica: Utilize uma constante pra function
-const nome = "Diego";
-const idade = 23;
+// const nome = "Diego";
+// const idade = 23;
 
-const mostraUsuario = (nome = 'Diego', idade = 18) => {
-    return {
-        nome,
-        idade
-    };
-}
-console.log(mostraUsuario(nome, idade));
-console.log(mostraUsuario(nome));
+// const mostraUsuario = (nome = 'Diego', idade = 18) => {
+//     return {
+//         nome,
+//         idade
+//     };
+// }
+// console.log(mostraUsuario(nome, idade));
+// console.log(mostraUsuario(nome));
+
 
 
 // 3.4
-const promise = () => {
-    return new Promise(function(resolve, reject) {
-        return resolve();
-    })
-   }
+// const promise = () => {
+//     return new Promise(function(resolve, reject) {
+//         return resolve();
+//     })
+//    }
 
-   const empresa = {
-    nome: 'Rocketseat',
-    endereco: {
-    cidade: 'Rio do Sul',
-    estado: 'SC',
-    }
-   };
+
+// Exercicio 4
+
+//    const empresa = {
+//     nome: 'Rocketseat',
+//     endereco: {
+//     cidade: 'Rio do Sul',
+//     estado: 'SC',
+//     }
+//    };
 
 //    const { nome } = empresa;
 
@@ -130,8 +135,47 @@ const promise = () => {
 
 
 
-function mostraInfo({nome , idade}) {
-    return `${nome} tem ${idade} anos.`;
-   }
+// function mostraInfo({nome , idade}) {
+//     return `${nome} tem ${idade} anos.`;
+//    }
 
-  console.log(mostraInfo({ nome: 'Rafaella', idade: 23 }))
+//   console.log(mostraInfo({ nome: 'Rafaella', idade: 23 }))
+
+
+
+// EXERCICIO 5
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// const [ x, ...y ] = arr;
+
+// console.log(x)
+
+// console.log(y)
+
+// function soma...
+
+// function soma(...params) {
+//     return params.reduce((total,next) => total + next);
+// }
+
+// console.log(soma(1, 2, 3, 4, 5, 6)); // 21
+// console.log(soma(1, 2)); // 3
+
+
+// const usuario = {
+//     nome: 'Diego',
+//     idade: 23,
+//     endereco: {
+//     cidade: 'Rio do Sul',
+//     uf: 'SC',
+//     pais: 'Brasil',
+//     }
+//    };
+
+   
+// const usuario2= {...usuario, nome: 'Gabriel' }
+// console.log(usuario2)
+
+// const usuario3 = { ...usuario, endereco: {cidade: 'Lontras'}}
+// console.log(usuario3)
+
